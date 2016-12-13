@@ -62,6 +62,7 @@ public class DefaultController {
         leveli.addTehtava(teht3);
         
         leveli.setTaso(1);
+        leveli.setImage("https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg");
         
         Level leveli2 = new Level();
         Tehtava teht4 = new Tehtava();
@@ -71,6 +72,7 @@ public class DefaultController {
         leveli2.addTehtava(teht4);
         
         leveli2.setTaso(2);
+        leveli2.setImage("https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg");
         
         levelRepo.save(leveli);
         levelRepo.save(leveli2);

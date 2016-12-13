@@ -11,9 +11,9 @@ and open the template in the editor.
     <body>
         <h1>
             <span>Onneksi olkoon! Pääsit juuri tasolle</span>
-            <span th:text="${level.taso}">kakkaa</span>
+            <span th:text="${level.taso}">kakkaa</span>          
         </h1>
-        
+        <img src="${level.image}" alt="Mountain View"></img>
             <a th:href="@{/epeli}">Jatka eteenpäin, uljas soturi</a>
     </body>
 </html>

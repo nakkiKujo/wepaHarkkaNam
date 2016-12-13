@@ -11,6 +11,8 @@ import wad.service.UUIDPersistable;
 public class Level extends UUIDPersistable implements Comparable<Level> {
 
     private int taso;
+    
+    private String image;
 
     @OneToMany
     private List<Tehtava> tehtavat = new ArrayList();
@@ -38,6 +40,16 @@ public class Level extends UUIDPersistable implements Comparable<Level> {
     public String toString() {
         return "Tasolla " + taso;
     }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+    
+    
 
     @Override
     public int compareTo(Level oih) {
