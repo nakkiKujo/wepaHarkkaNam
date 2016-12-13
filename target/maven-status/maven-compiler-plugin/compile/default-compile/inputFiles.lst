@@ -1,0 +1,15 @@
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/domain/Palaute.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/config/SecurityConfiguration.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/controller/KayttajaController.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/service/UUIDPersistable.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/repository/KayttajaRepository.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/domain/Kayttaja.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/controller/DefaultController.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/service/CustomUserDetailsService.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/domain/Level.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/PeliApplication.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/controller/TehtavaController.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/domain/Tehtava.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/repository/TehtavaRepository.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/repository/PalauteRepository.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/repository/LevelRepository.java

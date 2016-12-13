@@ -1,0 +1,15 @@
+wad/domain/Palaute.class
+wad/config/SecurityConfiguration.class
+wad/controller/DefaultController.class
+wad/repository/TehtavaRepository.class
+wad/PeliApplication.class
+wad/domain/Level.class
+wad/repository/KayttajaRepository.class
+wad/controller/KayttajaController.class
+wad/repository/LevelRepository.class
+wad/repository/PalauteRepository.class
+wad/service/UUIDPersistable.class
+wad/service/CustomUserDetailsService.class
+wad/controller/TehtavaController.class
+wad/domain/Kayttaja.class
+wad/domain/Tehtava.class
