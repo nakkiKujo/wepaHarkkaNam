@@ -12,4 +12,5 @@
 /home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/domain/Tehtava.java
 /home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/repository/TehtavaRepository.java
 /home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/repository/PalauteRepository.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/controller/LeaderboardController.java
 /home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/repository/LevelRepository.java

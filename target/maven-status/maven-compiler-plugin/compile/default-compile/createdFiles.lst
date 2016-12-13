@@ -6,6 +6,7 @@ wad/PeliApplication.class
 wad/domain/Level.class
 wad/repository/KayttajaRepository.class
 wad/controller/KayttajaController.class
+wad/controller/LeaderboardController.class
 wad/repository/LevelRepository.class
 wad/repository/PalauteRepository.class
 wad/service/UUIDPersistable.class
