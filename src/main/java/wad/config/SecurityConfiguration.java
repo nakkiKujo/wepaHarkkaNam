@@ -22,9 +22,12 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .anyRequest().authenticated();
-        http.formLogin()
-                .permitAll();
+                .antMatchers("/").permitAll()
+                .antMatchers("/etusivu").permitAll()
+                .antMatchers("/rekisterointi").permitAll()
+                .anyRequest().authenticated().and()
+                .formLogin().permitAll().and()
+                .logout().permitAll();
     }
 
     @Autowired

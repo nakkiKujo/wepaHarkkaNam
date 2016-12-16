@@ -14,3 +14,4 @@ wad/service/CustomUserDetailsService.class
 wad/controller/TehtavaController.class
 wad/domain/Kayttaja.class
 wad/domain/Tehtava.class
+wad/controller/KirjautumisController.class

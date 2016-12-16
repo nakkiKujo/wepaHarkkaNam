@@ -33,7 +33,7 @@ public class KayttajaController {
     @RequestMapping(value = "/epeli", method = RequestMethod.GET)
     public String list(Model model) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-        
+
         String kayttajanNimi = auth.getName();
         Kayttaja kayttaja = kayttajaRepo.findByName(kayttajanNimi);
         

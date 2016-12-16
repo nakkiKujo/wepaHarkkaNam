@@ -77,14 +77,14 @@ public class DefaultController {
         levelRepo.save(leveli);
         levelRepo.save(leveli2);
         
-        Kayttaja kalle = new Kayttaja(leveli);
-        kalle.setName("Kalle");
-        kalle.setPassword(passwordEncoder.encode("joonas"));
-        kayttajaRepo.save(kalle);
+//        Kayttaja kalle = new Kayttaja(leveli);
+//        kalle.setName("Kalle");
+//        kalle.setPassword(passwordEncoder.encode("joonas"));
+//        kayttajaRepo.save(kalle);
     }
     
     @RequestMapping("*")
     public String handleDefault() {
-        return "redirect:/epeli";
+        return "redirect:/etusivu";
     }
 }
