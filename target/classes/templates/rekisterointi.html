@@ -4,10 +4,22 @@
         <title>Rekisteröinti</title>
     </head>
     <body>
-        <form th:action="@{/rekisterointi}" method ="POST">
-            Kayttajatunnus:  <input type="text" name="kayttajatunnus" /> <br/>
-            Salasana:  <input type="text" name="salasana" /> <br/>
-            <input type="submit"/>
+        <form action="#" th:action="@{/rekisterointi}" th:object="${kayttaja}" method="POST">
+            <table>
+                <tr>
+                    <td>Kayttajatunnus: </td>
+                    <td><input type="text" th:field="*{name}" /></td>
+                    <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name Virheviesti</td>
+                </tr>
+                <tr>
+                    <td>Salasana: </td>
+                    <td><input type="text" th:field="*{password}" /></td>
+                    <td th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Virheviesti</td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                </tr>
+            </table>
         </form>
     </body>
 </html>
