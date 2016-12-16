@@ -13,11 +13,13 @@ and open the template in the editor.
         <h1>
             <span th:text="${kayttaja.name}"></span>
             <span th:text="${level}">kakkaa</span>
+            
         </h1>
         
-        <button type="button"><a href="/leaderboard">Leaderboard</a></button><br/>
+        <img th:src="${level.image}" width="169" height="169"></img> <br/>
+        <button type="button"><a href="/leaderboard">Leaderboard</a></button><br/><br/>
         
-        <button type="button"><a th:href="@{/tehtava/{id}(id=${tehtava.id})}">Tee tehtäviä</a></button><br/>
+        <button type="button"><a th:href="@{/tehtava/{id}(id=${tehtava.id})}">Tee tehtäviä</a></button><br/><br/>
         
         <button type="button"><a href="/logout">Kirjaudu ulos</a></button>
     </body>

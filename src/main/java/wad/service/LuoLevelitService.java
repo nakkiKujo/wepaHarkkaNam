@@ -45,6 +45,7 @@ public class LuoLevelitService {
         level1.addTehtava(teht12);
         level1.addTehtava(teht13);
         level1.setTaso(1);
+        level1.setImage("https://upload.wikimedia.org/wikipedia/commons/b/b8/Kiwi_(Actinidia_chinensis)_1_Luc_Viatour.jpg");
 
         levelRepo.save(level1);
 
@@ -102,6 +103,7 @@ public class LuoLevelitService {
         level3.addTehtava(teht32);
         level3.addTehtava(teht33);
         level3.setTaso(3);
+        level3.setImage("https://c2.staticflickr.com/4/3174/2635503092_e418351b43.jpg");
 
         levelRepo.save(level3);
 
@@ -130,6 +132,7 @@ public class LuoLevelitService {
         level4.addTehtava(teht42);
         level4.addTehtava(teht43);
         level4.setTaso(4);
+        level4.setImage("https://upload.wikimedia.org/wikipedia/commons/f/f5/Urho_Kaleva_Kekkonen.jpg");
 
         levelRepo.save(level4);
 
