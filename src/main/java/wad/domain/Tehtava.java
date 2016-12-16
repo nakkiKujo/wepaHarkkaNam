@@ -3,7 +3,6 @@ package wad.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
-import org.springframework.data.jpa.domain.AbstractPersistable;
 import wad.service.UUIDPersistable;
 
 @Entity

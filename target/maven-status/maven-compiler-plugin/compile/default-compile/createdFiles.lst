@@ -2,6 +2,7 @@ wad/domain/Palaute.class
 wad/config/SecurityConfiguration.class
 wad/controller/DefaultController.class
 wad/repository/TehtavaRepository.class
+wad/service/LuoLevelitService.class
 wad/PeliApplication.class
 wad/domain/Level.class
 wad/repository/KayttajaRepository.class

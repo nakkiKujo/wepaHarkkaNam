@@ -10,6 +10,7 @@
 /home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/domain/Level.java
 /home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/PeliApplication.java
 /home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/controller/TehtavaController.java
+/home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/service/LuoLevelitService.java
 /home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/domain/Tehtava.java
 /home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/repository/TehtavaRepository.java
 /home/tixti/NetBeansProjects/harkkatyowepa/src/main/java/wad/repository/PalauteRepository.java

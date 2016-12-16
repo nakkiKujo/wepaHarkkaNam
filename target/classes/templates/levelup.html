@@ -13,7 +13,7 @@ and open the template in the editor.
             <span>Onneksi olkoon! Pääsit juuri tasolle</span>
             <span th:text="${level.taso}">kakkaa</span>          
         </h1>
-        <img src="${level.image}" alt="Mountain View"></img>
-            <a th:href="@{/epeli}">Jatka eteenpäin, uljas soturi</a>
+        <img th:src="${level.image}" width="169" height="169"></img> <br/>
+        <button type="button"><a th:href="@{/epeli}">Jatka eteenpäin, uljas soturi</a></button>
     </body>
 </html>

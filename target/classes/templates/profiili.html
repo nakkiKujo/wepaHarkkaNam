@@ -15,8 +15,10 @@ and open the template in the editor.
             <span th:text="${level}">kakkaa</span>
         </h1>
         
-        <a href="/leaderboard">Leaderboard</a><br/>
+        <button type="button"><a href="/leaderboard">Leaderboard</a></button><br/>
         
-        <a th:href="@{/tehtava/{id}(id=${tehtava.id})}">Tee tehtäviä</a><br/>
+        <button type="button"><a th:href="@{/tehtava/{id}(id=${tehtava.id})}">Tee tehtäviä</a></button><br/>
+        
+        <button type="button"><a href="/logout">Kirjaudu ulos</a></button>
     </body>
 </html>

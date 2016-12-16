@@ -58,4 +58,5 @@ public class KirjautumisController {
         
         return "redirect:/etusivu";
     }
+    
 }
