@@ -1,0 +1,11 @@
+Olemme tehneet matemaattisen oppimispelin, jossa tehtäviä tekemällä pelaaja etenee korkeammille tasoille saaden aina vain paremman
+profiilikuvan. Sovelluksessa on myös leaderboard, josta käyttäjä voi vertailla omaa suoritustaan muiden käyttäjien suorituksiin.
+
+Tarkoituksenamme on vielä toteuttaa sovellukseen mahdollisuus palautteenantoon. Pelaaja voi siis jokaisen tason jälkeen antaa tasosta
+palautetta. Lisäksi Travis-toiminnallisuus vielä puuttuu.
+
+Sovelluksessa on vielä pieni ongelma liittyen viimeiseen tasoon: pelaajan läpäistyä viimeisen tason sovellus heittää errorin, koska
+emme vielä ehtineet asettaa tasoa viimeiseksi. Tämän toiminnnalisuuden lisääminen ei ole ongelma, ja korjaamme sen lopulliseen
+palautukseen.
+
+Pelin napit eivät välttämättää toimi kaikilla selaimilla. Chromella pelin pitäisi toimia oikein, Firefoxilla ei.
