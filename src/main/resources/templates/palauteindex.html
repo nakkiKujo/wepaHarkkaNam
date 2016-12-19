@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
     <head>
         <title>Selaa palautteita</title>
@@ -12,8 +8,11 @@ and open the template in the editor.
     <body>
         <ol>
             <li th:each="tehtava : ${tehtavat}">
-                <button type="button"><a href="/tehtava/{id}/palaute(id=${tehtava.id})">Klik!</a></button><span th:text="${tehtava.lyhennys}">nn</span><br/><br/>
+                <button type="button"><a th:href="@{/tehtava/{id}/palaute(id=${tehtava.id})}">Klik!</a></button><span th:text="${tehtava.lyhennys}">nn</span><br/><br/>
             </li>
-        </ol>
+        </ol><br/>
+        
+        <button type="button"><a href="/epeli">Palaa profiilisivulle</a></button>
     </body>
 </html>
+
