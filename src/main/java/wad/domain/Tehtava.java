@@ -37,5 +37,13 @@ public class Tehtava extends UUIDPersistable {
         return next;
     }
     
+    public String getLyhennys() {
+        if(kysymys.length() > 10) {
+            return kysymys.substring(0, 10);
+        }
+        
+        return kysymys;
+    }
+    
     
 }

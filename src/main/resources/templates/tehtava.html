@@ -17,6 +17,12 @@ and open the template in the editor.
         <form th:action="@{/tehtava/{id}(id=${tehtava.id})}" method="POST">
             <input type="number" name="vastaus"/>
             <input type="submit"/>
-        </form>
+        </form><br/>
+        
+        <a>Anna palautetta tehtävästä</a><br/>
+        <textarea form ="palauteId" name="palauteTeksti" id="taid" cols="35" wrap="soft"></textarea>
+        <form th:action="@{/tehtava/{id}/palaute(id=${tehtava.id})}" method="POST" id="palauteId">
+            <input type="submit"/>
+        </form>       
     </body>
 </html>

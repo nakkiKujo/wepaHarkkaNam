@@ -15,6 +15,8 @@ import wad.service.UUIDPersistable;
 public class Kayttaja extends UUIDPersistable {
     @NotBlank
     @Length(min = 3, max = 20)
+    
+    @Column(unique=true)
     private String name;
     
     @NotBlank

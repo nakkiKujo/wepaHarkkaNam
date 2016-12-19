@@ -11,9 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import wad.domain.Kayttaja;
+import wad.domain.Palaute;
 import wad.domain.Tehtava;
 import wad.repository.KayttajaRepository;
 import wad.repository.LevelRepository;
+import wad.repository.PalauteRepository;
 import wad.repository.TehtavaRepository;
 
 @Controller
@@ -27,6 +29,9 @@ public class TehtavaController {
     
     @Autowired
     private LevelRepository levelRepo;
+    
+    @Autowired
+    private PalauteRepository palauteRepo;
     
     @RequestMapping(value = "/tehtava/{id}", method = RequestMethod.GET)
     public String naytaTehtava(@PathVariable String id, Model model) {
@@ -58,5 +63,32 @@ public class TehtavaController {
         }
         
         return "redirect:/tehtava/" + id;
+    }
+    
+    @RequestMapping(value = "/tehtava/{id}/palaute", method = RequestMethod.POST)
+    public String kasittelePalaute(@PathVariable String id, Model model, @RequestParam String palauteTeksti) {
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        Kayttaja kayttaja = kayttajaRepo.findByName(auth.getName());
+        Tehtava tehtava = tehtavaRepo.findOne(id);
+        Palaute palaute = new Palaute();
+        palaute.setPalaute(palauteTeksti);
+        palaute.setPalautteenAntaja(kayttaja);
+        palaute.setPalautteenKohde(tehtava);
+        palauteRepo.save(palaute);      
+        return "redirect:/tehtava/" + id;
+    }
+    
+    @RequestMapping(value="/palautteet", method = RequestMethod.GET)
+    public String naytaPalautteet(Model madonna) {
+        madonna.addAttribute("tehtavat", tehtavaRepo.findAll());
+        return "palauteindex";
+    }
+    
+    @RequestMapping(value="/tehtava/{id}/palaute", method = RequestMethod.GET)
+    public String yhdenTehtavanPalautteet () {
+        
+        
+        
+        return "tehtavanpalautteet";
     }
 }
