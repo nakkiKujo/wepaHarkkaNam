@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tehtävän palautteet</title>
     </head>
     <body>
-        <div>TODO write content</div>
+        <ol>
+            <li th:each="palaute : ${palautteet}">
+                <span th:text="${palaute}">Palaute tostringinä</span><br/>
+            </li>
+        </ol><br/><br/>
+
+
+        <button type="button"><a href="/palautteet">Palaa selaamaan palautteita</a></button>
     </body>
 </html>
