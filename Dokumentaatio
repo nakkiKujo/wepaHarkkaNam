@@ -1,11 +1,31 @@
 Olemme tehneet matemaattisen oppimispelin, jossa tehtäviä tekemällä pelaaja etenee korkeammille tasoille saaden aina vain paremman
 profiilikuvan. Sovelluksessa on myös leaderboard, josta käyttäjä voi vertailla omaa suoritustaan muiden käyttäjien suorituksiin.
 
-Tarkoituksenamme on vielä toteuttaa sovellukseen mahdollisuus palautteenantoon. Pelaaja voi siis jokaisen tason jälkeen antaa tasosta
-palautetta. Lisäksi Travis-toiminnallisuus vielä puuttuu.
+Käyttäjällä on mahdollisuus rekisteröityä ja kirjautua peliin.
+Profiilisivulla käyttäjä näkee oman profiilikuvansa sekä linkit leaderboardiin, palautteisiin, tehtävien tekoon sekä
+uloskirjautumiseen.
 
-Sovelluksessa on vielä pieni ongelma liittyen viimeiseen tasoon: pelaajan läpäistyä viimeisen tason sovellus heittää errorin, koska
-emme vielä ehtineet asettaa tasoa viimeiseksi. Tämän toiminnnalisuuden lisääminen ei ole ongelma, ja korjaamme sen lopulliseen
-palautukseen.
+Leaderboardilla näkyy parhaimpien käyttäjien tulokset.
+
+Palautteissa näkyy tehtäväkohtaiset palautteet, joita pelaajat voivat antaa niistä.
+
+Tehtäviä tehdessä pelaaja voi antaa palautetta tehtävästä (esim liian helppo/vaikea). Tehtyään kolme tehtävää hän nousee uudelle
+tasolle, ja hänen profiilikuvansa päivittyy.
+
+
+
+
+Ongelmia:
+
+Pelin viimeisen tehtävän jälkeen error, koska emme vielä määritelleet tasoa viimeiseksi.
 
 Pelin napit eivät välttämättää toimi kaikilla selaimilla. Chromella pelin pitäisi toimia oikein, Firefoxilla ei.
+
+Jos pelaaja yrittää palauttaa tehtävän tyhjänä, tulee error.
+
+Työtä tehdessä git alkoi temppuilla. Repositorioome korruptoitui, emmekä enää pystyneet pushaamaan muutoksia Githubiin
+(syynä fatal error yms.) Samalla käyttämämme käyttäjän selain alkoi temppuilla, joten aloimme tehdä työtä toisella koneella.
+Silläkään emme pystyneet pushaamaan muutoksia gitistä. Siis jouduimme copy-pasteamaan viimeiset muutokset suoraan Githubiin
+NetBeansista. Tämä myös tarkoittaa, että tämän jälkeen kaikki muutokset, joita haluamme tehdä, tulee koodata suoraan Githubiin.
+
+Toisin sanoen hajosimme täysin tähän ongelmaan...
