@@ -1,7 +1,9 @@
 
+
 package wad.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 import wad.service.UUIDPersistable;
@@ -15,7 +17,8 @@ public class Palaute extends UUIDPersistable{
     private Kayttaja palautteenAntaja;
     
     @ManyToOne
-    private Tehtava palautteenKohde;
+    @JoinColumn(name="tehtava")
+    private Tehtava tehtava;
 
     public String getPalaute() {
         return palaute;
@@ -25,8 +28,8 @@ public class Palaute extends UUIDPersistable{
         return palautteenAntaja;
     }
 
-    public Tehtava getPalautteenKohde() {
-        return palautteenKohde;
+    public Tehtava getTehtava() {
+        return tehtava;
     }
 
     public void setPalaute(String palaute) {
@@ -37,8 +40,14 @@ public class Palaute extends UUIDPersistable{
         this.palautteenAntaja = palautteenAntaja;
     }
 
-    public void setPalautteenKohde(Tehtava palautteenKohde) {
-        this.palautteenKohde = palautteenKohde;
+    public void setTehtava(Tehtava palautteenKohde) {
+        this.tehtava = palautteenKohde;
+    }
+
+    @Override
+    public String toString() {
+        return "Nimi: " + palautteenAntaja.getName() + ", "
+                + "Palaute: " + palaute;
     }
     
     
