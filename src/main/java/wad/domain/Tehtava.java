@@ -1,7 +1,10 @@
 
+
 package wad.domain;
 
+import java.util.List;
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import wad.service.UUIDPersistable;
 
@@ -38,8 +41,8 @@ public class Tehtava extends UUIDPersistable {
     }
     
     public String getLyhennys() {
-        if(kysymys.length() > 10) {
-            return kysymys.substring(0, 10);
+        if(kysymys.length() > 15) {
+            return "" + kysymys.substring(0, 15) + "...";
         }
         
         return kysymys;
