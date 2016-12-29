@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>YOU'RE THE GREATEST!</title>
+    </head>
+    
+    <body>
+        <h1>
+            <span>Onneksi olkoon! Olet niin hyvä, että tätä pidemmälle et voi päästä!</span>
+            <span>Jos kuitenkin haluat, voit palata takaisin profiilisivulle ja tehdä viimeiset tehtävät uudestaan.</span>
+        </h1>
+        
+        <button type="button"><a th:href="@{/epeli}">Palaa profiilisivulle!</a></button>
+    </body>
+</html>
