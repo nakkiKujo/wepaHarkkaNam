@@ -57,7 +57,7 @@ public class KayttajaController {
         Level uusiLevel = levelRepo.findByTaso(uusiTaso);
         
         if(uusiLevel == null) { // käyttäjä oli jo viimeisellä tasolla, ei siis löytynyt korkeampaa
-            return "finalCountdown";
+            return "finalcountdown";
         }
         
         kayttaja.setLevel(uusiLevel);
