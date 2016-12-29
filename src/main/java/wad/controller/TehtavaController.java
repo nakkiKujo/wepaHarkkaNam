@@ -55,15 +55,15 @@ public class TehtavaController {
         Tehtava tehtava = tehtavaRepo.findOne(id);
         int oikeaVastaus = tehtava.getVastaus();
         
-        if(vastaus == oikeaVastaus) {
+        if(vastaus == oikeaVastaus) {  //annettu vastaus on sama kuin määritelty oikea vastaus
             Tehtava uusiTehtava = tehtava.getNext();
             if(uusiTehtava == null) {
-                return "redirect:/levelup";
+                return "redirect:/levelup";  //eii ole seuraavaa tehtävää, siis käyttäjän taso nousee
             }
             return "redirect:/tehtava/" + uusiTehtava.getId();
         }
         
-        return "redirect:/tehtava/" + id;
+        return "redirect:/tehtava/" + id;    // vastaus väärin, annetaan sama tehtävä uudestaan
     }
     
 }
