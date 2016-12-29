@@ -23,6 +23,10 @@ and open the template in the editor.
         <textarea form ="palauteId" name="palauteTeksti" cols="35" wrap="soft"></textarea>
         <form th:action="@{/tehtava/{id}/palaute(id=${tehtava.id})}" method="POST" id="palauteId">
             <input type="submit"/>
-        </form>       
+        </form>    
+        
+        <br/>
+        <br/>
+        <button type="button"><a href="/epeli">Palaa profiilisivulle</a></button>
     </body>
 </html>
