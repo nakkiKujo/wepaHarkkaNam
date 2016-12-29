@@ -22,7 +22,8 @@ public class LeaderboardController {
     
     @RequestMapping(value ="/leaderboard", method = RequestMethod.GET)
     public String naytetaanLeaderboard(Model model) {
-        Pageable page = new PageRequest(0, 10, Sort.Direction.DESC, "level");
+        //haetaan 10 korkeimmalla tasolla olevaa käyttäjää
+        Pageable page = new PageRequest(0, 10, Sort.Direction.ASC, "level");
         Page<Kayttaja> kayttajaPage = kayttisRepo.findAll(page);
         List<Kayttaja> kayttajaLista = kayttajaPage.getContent();
         
