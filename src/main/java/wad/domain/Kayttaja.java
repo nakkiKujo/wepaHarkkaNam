@@ -23,7 +23,6 @@ public class Kayttaja extends UUIDPersistable {
     private String password;
     
     @ManyToOne
-    @Column(name="level")
     private Level level;
     
     public Kayttaja() {
