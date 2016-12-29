@@ -48,14 +48,17 @@ public class KayttajaController {
     @Transactional
     @RequestMapping(value = "/levelup", method = RequestMethod.GET)
     public String levelUpataan(Model model) {
-        //haetan kayttajan leveli + profiilikuva
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        Authentication auth = SecurityContextHolder.getContext().getAuthentication();  //haetaan käyttäjä
         String kayttajanNimi = auth.getName();
         Kayttaja kayttaja = kayttajaRepo.findByName(kayttajanNimi);
         
         int taso = kayttaja.getLevel().getTaso();
         int uusiTaso = taso + 1;
         Level uusiLevel = levelRepo.findByTaso(uusiTaso);
+        
+        if(uusiLevel == null) { // käyttäjä oli jo viimeisellä tasolla, ei siis löytynyt korkeampaa
+            return "finalCountdown";
+        }
         
         kayttaja.setLevel(uusiLevel);
         model.addAttribute("level", uusiLevel);
