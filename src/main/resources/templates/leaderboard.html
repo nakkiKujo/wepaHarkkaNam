@@ -6,12 +6,12 @@
     </head>
     <body>
         
-        <ul>
+        <ol>
             <li th:each="kayttaja : ${kayttajat}">
                 <span th:text="${kayttaja.name}"/>
                 <span th:text="${kayttaja.level.taso}"/>
             </li>
-        </ul>
+        </ol>
         
         <button type="button"><a href="/epeli">Palaa profiilisivulle</a></button>
         
