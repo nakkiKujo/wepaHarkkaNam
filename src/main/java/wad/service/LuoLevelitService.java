@@ -40,15 +40,15 @@ public class LuoLevelitService {
         tehtavaRepo.save(teht12);
         tehtavaRepo.save(teht11);
 
-        //Level level1 = new Level();
-        //level1.addTehtava(teht11);
-        //level1.addTehtava(teht12);
-        //level1.addTehtava(teht13);
-        //level1.setTaso(1);
-        //level1.setImage("https://upload.wikimedia.org/wikipedia/commons/b/b8/Kiwi_(Actinidia_chinensis)_1_Luc_Viatour.jpg");
+        Level level1 = new Level();
+        level1.addTehtava(teht11);
+        level1.addTehtava(teht12);
+        level1.addTehtava(teht13);
+        level1.setTaso(1);
+        level1.setImage("https://upload.wikimedia.org/wikipedia/commons/b/b8/Kiwi_(Actinidia_chinensis)_1_Luc_Viatour.jpg");
 
-        //levelRepo.save(level1);
-        luoLeveli(1, teht11, teht12. teht13, "https://upload.wikimedia.org/wikipedia/commons/b/b8/Kiwi_(Actinidia_chinensis)_1_Luc_Viatour.jpg");  
+        levelRepo.save(level1);
+         
 
         Tehtava teht21 = new Tehtava();
         teht21.setKysymys("3 * 3 = ?");
@@ -69,15 +69,15 @@ public class LuoLevelitService {
         tehtavaRepo.save(teht22);
         tehtavaRepo.save(teht21);
 
-        //Level level2 = new Level();
-        //level2.addTehtava(teht21);
-        //level2.addTehtava(teht22);
-        //level2.addTehtava(teht23);
-        //level2.setTaso(2);
-        //level2.setImage("https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg");
+        Level level2 = new Level();
+        level2.addTehtava(teht21);
+        level2.addTehtava(teht22);
+        level2.addTehtava(teht23);
+        level2.setTaso(2);
+        level2.setImage("https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg");
 
-        //levelRepo.save(level2);
-        luoLeveli(2, teht21, teht22. teht23, "https://upload.wikimedia.org/wikipedia/commons/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg");
+        levelRepo.save(level2);
+        
         
         Tehtava teht31 = new Tehtava();
         teht31.setKysymys("Kuusi pollevaa poikaa haluaa ostaa jäätelöä." +
@@ -100,15 +100,15 @@ public class LuoLevelitService {
         tehtavaRepo.save(teht32);
         tehtavaRepo.save(teht31);
 
-        //Level level3 = new Level();
-        //level3.addTehtava(teht31);
-        //level3.addTehtava(teht32);
-        //level3.addTehtava(teht33);
-        //level3.setTaso(3);
-        //level3.setImage("https://c2.staticflickr.com/4/3174/2635503092_e418351b43.jpg");
+        Level level3 = new Level();
+        level3.addTehtava(teht31);
+        level3.addTehtava(teht32);
+        level3.addTehtava(teht33);
+        level3.setTaso(3);
+        level3.setImage("https://c2.staticflickr.com/4/3174/2635503092_e418351b43.jpg");
 
-        //levelRepo.save(level3);
-        luoLeveli(3, teht31, teht32, teht33, "https://c2.staticflickr.com/4/3174/2635503092_e418351b43.jpg");
+        levelRepo.save(level3);
+        
         
         Tehtava teht41 = new Tehtava();
         teht41.setKysymys("(6 * 6 * 6 / 4 ) / 2 = ?");
@@ -130,18 +130,19 @@ public class LuoLevelitService {
         tehtavaRepo.save(teht42);
         tehtavaRepo.save(teht41);
 
-        //Level level4 = new Level();
-        //level4.addTehtava(teht41);
-        //level4.addTehtava(teht42);
-        //level4.addTehtava(teht43);
-        //level4.setTaso(4);
-        //level4.setImage("https://upload.wikimedia.org/wikipedia/commons/f/f5/Urho_Kaleva_Kekkonen.jpg");
+        Level level4 = new Level();
+        level4.addTehtava(teht41);
+        level4.addTehtava(teht42);
+        level4.addTehtava(teht43);
+        level4.setTaso(4);
+        level4.setImage("https://upload.wikimedia.org/wikipedia/commons/f/f5/Urho_Kaleva_Kekkonen.jpg");
 
-        //levelRepo.save(level4);
-        luoLeveli(4, teht41, teht42, teht43, "https://upload.wikimedia.org/wikipedia/commons/f/f5/Urho_Kaleva_Kekkonen.jpg");
+        levelRepo.save(level4);
+        
 
     }
     
+    //tämä oli tarkoitus ottaa käyttöön mutta tuli failurea tuntemattomasta syystä
     private void luoLeveli(int taso, Tehtava t1, Tehtava t2, Tehtava t3, String kuvaURL) {
         Level level = new Level();
         level.addTehtava(t1);
