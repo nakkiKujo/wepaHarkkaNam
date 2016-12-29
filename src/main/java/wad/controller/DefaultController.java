@@ -33,11 +33,6 @@ public class DefaultController {
     @PostConstruct
     public void init() {
         leveliService.luoLevelit();
-        Kayttaja testiKayttaja = new Kayttaja();
-        testiKayttaja.setLevel(levelRepo.findByTaso(1));
-        testiKayttaja.setName("testi");
-        testiKayttaja.setPassword(PE.encode("testi"));
-        kayttajaRepo.save(testiKayttaja);
     }
     
     @RequestMapping("*")
