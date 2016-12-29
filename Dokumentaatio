@@ -5,27 +5,20 @@ Käyttäjällä on mahdollisuus rekisteröityä ja kirjautua peliin.
 Profiilisivulla käyttäjä näkee oman profiilikuvansa sekä linkit leaderboardiin, palautteisiin, tehtävien tekoon sekä
 uloskirjautumiseen.
 
-Leaderboardilla näkyy parhaimpien käyttäjien tulokset.
-
-Palautteissa näkyy tehtäväkohtaiset palautteet, joita pelaajat voivat antaa niistä.
-
-Tehtäviä tehdessä pelaaja voi antaa palautetta tehtävästä (esim liian helppo/vaikea). Tehtyään kolme tehtävää hän nousee uudelle
-tasolle, ja hänen profiilikuvansa päivittyy.
+Palautteissa näkyy palautteet, joita pelaajat voivat antaa tehtävistä.
 
 
-
-
-Ongelmia:
-
-Pelin viimeisen tehtävän jälkeen error, koska emme vielä määritelleet tasoa viimeiseksi.
+Toimintaongelmia ja puutteita:
 
 Pelin napit eivät välttämättää toimi kaikilla selaimilla. Chromella pelin pitäisi toimia oikein, Firefoxilla ei.
 
 Jos pelaaja yrittää palauttaa tehtävän tyhjänä, tulee error.
+
+
+Haasteita työtä tehdessä:
 
 Työtä tehdessä git alkoi temppuilla. Repositorioome korruptoitui, emmekä enää pystyneet pushaamaan muutoksia Githubiin
 (syynä fatal error yms.) Samalla käyttämämme käyttäjän selain alkoi temppuilla, joten aloimme tehdä työtä toisella koneella.
 Silläkään emme pystyneet pushaamaan muutoksia gitistä. Siis jouduimme copy-pasteamaan viimeiset muutokset suoraan Githubiin
 NetBeansista. Tämä myös tarkoittaa, että tämän jälkeen kaikki muutokset, joita haluamme tehdä, tulee koodata suoraan Githubiin.
 
-Toisin sanoen hajosimme täysin tähän ongelmaan...
